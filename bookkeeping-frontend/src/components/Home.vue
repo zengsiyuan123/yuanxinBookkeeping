@@ -70,10 +70,16 @@ export default {
   display: flex;
   justify-content: space-between;
   .container_left {
-    width: 12%;
+    width: 160px;
     height: 100%;
     background: #1F2D3D;
     overflow: auto;
+    & /deep/ .el-menu {
+      height: 100%;
+      .el-menu-item {
+        min-width: 100%;
+      }
+    }
   }
 }
 </style>
